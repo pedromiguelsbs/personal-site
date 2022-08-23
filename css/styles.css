@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #FEFEFE;
+}
+
+.top-container {
+    caret-color: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 3rem;
+    background: linear-gradient(180deg, rgba(36,36,36,1) 85%, rgba(52,52,52,1) 97%, rgba(140,206,241,1) 100%);
+}
+
+.title {
+    margin: 0;  
+    font-family: 'Sacramento', cursive;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.sub-title {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.astro-island {
+    margin-top: 5rem;
+    width: 700px;
+    caret-color: transparent;
+}
+
+.separate-line {
+
+}
+
+.middle-container {
+    color: black;
+}
+
+.bottom-container {
+    color: black;
+}
+
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 810px)
+{
+    .sub-title {
+        font-size: .9rem;
+    }
+    .astro-island {
+        width: 600px;
+    }
+}
+@media (max-width: 610px)
+{
+    .astro-island {
+        width: 425px;
+    }
+}
+@media (max-width: 425px)
+{
+    .astro-island {
+        width: 320px;
+    }
+}
