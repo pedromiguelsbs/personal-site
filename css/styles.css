@@ -2,30 +2,21 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: 'Merriweather', serif;
     color: #FEFEFE;
-
     text-align: center;
+    scroll-behavior: smooth;
 }
 
-.top-container, 
-.middle-container, 
-.bottom-container {
-    height: 101vh;
-
+.container {
+    height: 103vh;
     caret-color: transparent;
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
-    align-items: center;    
-}
-
-.top-container {
-    background: linear-gradient(180deg, rgba(36,36,36,1) 85%, rgba(52,52,52,1) 99%, rgb(140, 206, 241) 100%);
+    align-items: center;
 }
 
 .title {
@@ -35,33 +26,40 @@ body {
     font-weight: normal;
 }
 
-.sub-title {
+.subtitle {
     margin: 0;
-    
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
-.astro-island, 
-.earth-island, 
-.desert-island {
+.top {
+    background: linear-gradient(180deg, rgba(36,36,36,1) 85%, rgba(52,52,52,1) 99%, rgb(140, 206, 241) 100%);
+}
+
+.middle {
+    background: linear-gradient(180deg, rgb(140, 206, 241) 99%, rgb(240, 97, 36) 100%);
+}
+
+.bottom {
+    background: rgb(240, 97, 36);
+}
+
+a {
+    color: #ffaf8c;
+    text-decoration: none;
+}
+
+.island {
     width: 700px;
     margin: 3rem auto;
     display: block;
 }
 
-.separate-line {
+.separator {
     border-top: 7px dotted #FEFEFE;
     border-bottom: none;
     border-left: none;
     border-right: none;
     width: 60px;
-}
-
-.middle-container {
-    background: linear-gradient(180deg, rgb(140, 206, 241) 99%, rgb(240, 97, 36) 100%);
-}
-
-.bottom-container {
-    background: rgb(240, 97, 36);
 }
